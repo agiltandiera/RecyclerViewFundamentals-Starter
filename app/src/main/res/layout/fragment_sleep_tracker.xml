@@ -31,9 +31,13 @@
 
     <!-- Start of the visible fragment layout using ConstraintLayout -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".sleeptracker.SleepTrackerFragment">
+        tools:context=".sleeptracker.SleepTrackerFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop_button">
 
         <!-- Simplest way of displaying scrollable text and data. There is a
              better and more efficient way to do this, and you will learn about
@@ -46,7 +50,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/slepp_list"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
         <Button
             android:id="@+id/start_button"
