@@ -44,6 +44,7 @@
              you can set it for the Views using this lambda pattern. -->
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/slepp_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
